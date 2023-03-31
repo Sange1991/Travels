@@ -1,0 +1,563 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+:root{
+    --primarycolor:rgb(144, 20, 144);
+    --secondarycolor:#FC5B62;
+    --brand: rgb(149, 107, 149);
+    --white:#f5f5f5;
+    --black:#000;
+    --purple:purple;
+    --voilet: blueviolet;
+}
+// Header start here
+.navbar {
+    background-color:var(--primarycolor);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 16px;
+    img{
+    height:100%;
+    width: 100%;
+   
+}
+    .navbar-nav {
+        gap: 40px;
+        padding-left: 100px;
+       .nav-item a{
+        color:#f5f5f5;
+        &:hover{
+            color:black;
+        }
+       }
+       .dropdown-menu{
+        background-color: var(--primarycolor);
+       }
+    }
+        
+    form{
+        
+        .form-control{
+            width: 360px;
+            
+        }
+            .search{
+                position:relative;
+                left:-75px;
+                background-color: rgb(163, 28, 163);
+                color:var(--white);
+                font-size: 16px;
+                font-weight: 500;
+                &:hover{
+                    background-color:var(--purple);
+                }
+            }
+            
+        }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navbar .navbar-nav{
+        gap: 5px;
+        padding-left: 0px;
+        font-size: 14px;
+    }
+}
+// Header Ends Here
+
+
+// hero section starts
+
+    .carousel-inner{
+        img{
+            width: 100%;
+            height: 80vh;
+        }
+    }
+
+// Hero section Ends Here
+
+// Footer
+footer{
+    background-color:var(--purple);
+    font-size: 16px;
+    font-weight: 400;
+    color:var(--white);
+
+        a{
+            text-decoration: none;
+            color: var(--white);
+        
+        &:hover{
+            color:var(--black);
+        }
+    }
+
+    .abouttravel{
+       
+        img{
+            height: 50px;
+             width: 59px;
+        }
+        p{
+            line-height:20px;
+        }
+
+    }
+    .form{
+        .email{
+            width: 300px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0px 0px 8px #888888;;
+        }
+        .submit{
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: rgb(185, 101, 185);
+            border:none;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                background-color: rgb(39, 12, 39);
+                color: var(--white);
+            }
+        }
+    }
+
+}
+@media only screen and (max-width: 768px){
+    footer{
+        font-size: 14px;
+    }
+}
+// Footer
+// Banner Start here
+.notched{
+    color:var(--secondarycolor);
+    margin: 20px 0px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.left-img-up{
+    .langtang{
+        position: relative;
+        box-shadow: 5px 5px 10px #7a7979;
+        .btn{
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            background:var(--purple);
+            border: none;
+            box-shadow: 5px 5px 10px #000;
+            transition:.3s ease-in-out;
+            &:hover{
+                background-color: blueviolet;
+            }
+        }
+        .imglang{
+            height: 300px;
+        }
+        .heading6{
+            position: absolute;
+            top: 230px;
+            left: 10px;
+            color:var(--white);
+            font-weight: 500;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        
+       
+    }
+}
+.left-img-down
+{
+ .annapurna{
+    position: relative;
+    box-shadow: 5px 5px 10px #7a7979;
+    .btn{
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        background:var(--purple);
+        border: none;
+        box-shadow: 5px 5px 10px #000;
+        transition:.3s ease-in-out;
+        &:hover{
+            background-color: blueviolet;
+        }
+    }
+    .imgann{
+        height: 300px;
+    }
+    .heading5{
+        position: absolute;
+        top: 230px;
+        left: 10px;
+        color:var(--white);
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    
+}}
+.right-img{
+    .mustang{
+        position: relative;
+        box-shadow: 5px 5px 10px #7a7979;
+        padding-bottom: 10px;
+        .btn{
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            background: var(--purple);
+            border: none;
+            box-shadow: 5px 5px 10px #000;
+            transition:.3s ease-in-out;
+            &:hover{
+                background-color: blueviolet;
+            }
+        }
+        .imgmust{
+            height: 145px;
+        }
+        .heading4{
+            position: absolute;
+            top: 90px;
+            left: 10px;
+            color:var(--white);
+            font-weight: 500;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        
+    }
+    
+        .everest{
+            position: relative;
+            box-shadow: 5px 5px 10px #7a7979;
+            .btn{
+                position: absolute;
+                top: 5px;
+                left: 10px;
+                background: var(--purple);
+                border: none;
+                box-shadow: 5px 5px 10px #000;
+                transition:.3s ease-in-out;
+                &:hover{
+                    background-color: blueviolet;
+                }
+            }
+            .imgnam{
+                height: 145px;
+            }
+            .heading3{
+                position: absolute;
+                top: 90px;
+                left: 10px;
+                color:var(--white);
+                font-weight: 500;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            
+        }
+    
+}
+
+// banner ends here
+
+//About us starts here
+section{
+    .gallery{
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 20px;
+        color:var(--secondarycolor);
+        
+    }
+    .agency{
+        font-size: 35px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .descpa{
+        font-size: 16px;
+        font-weight: 400;
+    
+    }
+    .mainitem{
+        font-size: 16px;
+        font-weight: 400;
+        .bi{
+            background-color:#D1EAF2;
+            width: 70px;
+            height: 80px;
+            text-align: center;
+        }
+    
+    }
+   
+}
+.associate{
+    h6{
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--secondarycolor);
+        margin: 10px 0;
+    }
+    h3{
+        font-size: 24px;
+        font-weight: 600;
+        margin: 15px 0;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    
+}
+//about us ends here
+
+// blog starts here
+.blog{
+    h2{
+        color: var(--secondarycolor);
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .blogimg{
+        box-shadow: 2px 2px 5px #888888;
+        img{
+            width: 100%;
+        }
+        h4{
+            font-size: 24px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        span{
+            p{
+                font-size: 16px;
+                color: #7a7979;
+                font-weight: 400;
+            }
+            
+
+        
+        }
+        p{
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        h6{
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 10px;
+            a{
+                text-decoration: none;
+                color:var(--purple);
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+    }
+    .teamh3{
+        color: var(--secondarycolor);
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 30px 0px;
+    }
+    .teamimg{
+        text-align: center;
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        h6{
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--secondarycolor);
+            padding-top: 10px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 500;
+            color:var(--black);
+     
+        }
+        .psano{
+            font-size: 16px;
+            color: #7a7979;
+            font-weight: 400;
+        }
+        
+    }
+}
+// blog ends here
+// annapurna start here
+.annapurna{
+    h3{
+        font-size: 30px;
+        font-weight: 500;
+        color:var(--secondarycolor);
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    .annapurnadiv{
+        background-color:#1D2532;
+        color:var(--white);
+        div{
+            margin: 0px 10px;
+        p{
+            color:#1C95E5;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 10px;
+        }
+    }
+    }
+    .overview{
+        h4{
+            font-size: 26px;
+            font-weight: 500;
+            color:var(--secondarycolor);
+        }
+        p,ul{
+            font-size: 16px;
+            font-weight: 400;
+
+        }
+        h5{
+            font-size: 24px;
+            font: 500;
+            color:var(--secondarycolor);
+        }
+
+    }
+    table{
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+// annapurna ends here
+
+// Langtang Starts here
+section{
+    h3{
+        font-size: 30px;
+        font-weight: 600;
+        color:var(--secondarycolor);
+    }
+.langtang{
+    position: relative;
+    .langtangmap{
+        position: absolute;
+        bottom: -15px;
+        right: 467px;
+        border: 5px solid white;
+    }
+   
+}
+.text{
+    margin-top: 20px;
+    background-color: #D1EAF2;
+    font-size: 16px;
+    font-weight: 400;
+}
+.font{
+    h4{
+        font-size: 24px;
+        font-weight: 500px;
+        color:var(--secondarycolor);
+    }
+    p{
+        font-size: 16px;
+    font-weight: 400;
+    
+    }
+}
+.brief{
+    font-size: 24px;
+    font-weight: 500px;
+    color: var(--secondarycolor);
+}
+}
+//Langtang ends here
+
+//Everest start here/
+.namche{
+    .arrange{
+        background-color: #a6c9e1;
+        color: #1D2532;
+    
+    .arrangement {
+        font-size: 16px;
+        font-weight: 400;
+       
+        .bi{
+            font: 600;
+        }
+        
+    }}
+    .ebc{
+        background-color: #D1EAF2;
+    }
+}
+//Everest Ends here/
+
+
+//GoToTop starts HEre//
+.section{
+    .top-btn{
+        font-size:2.4rem;
+        width:40px;
+        height: 40px;
+        color:#fff;
+        background-color:var(--secondarycolor);
+        border-radius:50%;
+        position:fixed;
+        z-index:1;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        cursor: pointer;
+        right:0px;
+        bottom: 50px;
+        .goToBtn{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            
+        
+        &--bi{
+            animation: gototop 1.2s linear infinite alternate-reverse;
+        }
+        @keyframes gototop {
+            0%{
+                transform: translateY(-0.5rem);
+            }
+            100%{
+                transform: translateY(1rem);
+            }
+            
+        }
+    }
+}
+}
+//GoToTop Ends here//
